@@ -103,7 +103,7 @@ Dan berikut ini:
 MEGUMIN_IMG = "https://images7.alphacoders.com/653/653516.jpg"
 
 DONATE_STRING = """Heya, senang mendengar Anda ingin berdonasi!
-Historia dihosting di servernya sendiri dan tidak memerlukan donasi apa pun seperti sekarang, tetapi \
+Megumin dihosting di servernya sendiri dan tidak memerlukan donasi apa pun seperti sekarang, tetapi \
 Anda dapat menyumbang kepada penulis asli Kode dasar, Paul
 Ada dua cara untuk mendukungnya; [PayPal](paypal.me/PaulSonOfLars), atau [Monzo](monzo.me/paulnionvestergaardlarsen)."""
 
@@ -246,7 +246,7 @@ def start(update: Update, context: CallbackContext):
             )
     else:
         update.effective_message.reply_text(
-            "Saya masih hidup!\n<b>Belum tidur sejak itu:</b> <code>{}</code>".format(
+            "Saya masih hidup!\n<b>Belum tidur sejak :</b> <code>{}</code>".format(
                 uptime
             ),
             parse_mode=ParseMode.HTML,
