@@ -1,4 +1,4 @@
-![MeguminRobot](Url)
+![MeguminRobot](https://images2.alphacoders.com/996/996947.jpg)
 # Megumin
 
 Bot Telegram Python modular yang berjalan di python3 dengan database sqlalchemy.
