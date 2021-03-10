@@ -1,0 +1,173 @@
+{
+      "name": "MeguminRobot",
+      "description": "Bot manajemen grup Telegram bertema Anime.",
+      "keywords": [
+         "telegram",
+         "anime",
+         "group",
+         "manager",
+         "Saitama"
+      ],   
+   "repository": "https://github.com/Perona-sama/MeguminRobot",
+   "addons": [
+      {
+         "options": {
+            "version": "12"
+         },
+         "plan": "heroku-postgresql"
+      }
+   ],
+   "env": {
+      "TOKEN": {
+         "description": "Token bot Anda.  Dapatkan satu dari @BotFather",
+         "required": true,
+         "value": ""
+      },
+      "API_ID": {
+         "description": "Dapatkan API_ID dari my.telegram.org, digunakan untuk modul berbasis telethon.",
+         "required": true,
+         "value": ""
+      },
+      "INFOPIC": {
+         "description": "Untuk menampilkan foto profil info, isi dengan True/False "",
+         "required": false,
+         "value": ""
+      },
+      "API_HASH": {
+         "description": "Dapatkan API_HASH dari my.telegram.org, digunakan untuk modul berbasis telethon.",
+         "required": true,
+         "value": ""
+      },    
+      "SQLALCHEMY_DATABASE_URI": {
+         "description": "Db postgresql Anda, kosongkan bidang ini jika Anda tidak memilikinya.",
+         "required": false,
+         "value": "sqldbtype://username:pw@hostname:port/db_name"
+      },      
+      "OWNER_ID": {
+         "description": "ID pengguna Anda sebagai bilangan bulat.",
+         "required": true,
+         "value": "1444117658"
+      },
+      "OWNER_USERNAME": {
+         "description": "Nama pengguna Anda tanpa @",
+         "value": "PeronaSama"
+      },
+      "SUPPORT_CHAT": {
+         "description": "Nama pengguna obrolan grup dukungan Telegram Anda di mana pengguna Anda akan pergi dan mengganggu Anda.",
+         "required": true,
+         "value": "ScoutingLegionSNK"
+      },
+      "EVENT_LOGS": {
+         "description": "Saluran log peristiwa untuk mencatat peristiwa tingkat bot yang penting, rekomendasikan untuk menjadikannya publik.  contoh.: '-123456",
+         "required": true,
+         "value": "-123456798"
+      },
+      "JOIN_LOGGER": {
+         "description": "Saluran di mana bot akan mencetak siapa yang menambahkannya ke grup apa, berguna selama debugging atau penanganan spam",
+         "required": true,
+         "value": "-123456798"
+      },      
+      "CASH_API_KEY": {
+         "description": "Diperlukan untuk pengonversi mata uang.  Dapatkan milik Anda dari https://www.alphavantage.co/support/#api-key",
+         "required": true,
+         "value": "-xyz"
+      },
+      "TIME_API_KEY": {
+         "description": "Diperlukan untuk informasi zona waktu.  Dapatkan milik Anda dari https://timezonedb.com/api "",
+         "required": true,
+         "value": "-xyz"
+      },
+      "DEV_USERS": {
+         "description": "ID pengguna yang merupakan Pengembang bot Anda (dapat menggunakan /py dll.).  Jika Anda seorang noob dan akan datang dan mengganggu dukungan Megumin maka simpan ID saat ini di sini dan tambahkan milik Anda..",
+         "required": false,
+         "value": "660565862 459034222 189005567 346981140 367222759 1444117658"
+      },
+      "sw_api": {
+         "description": "Token API Spamwatch, Dapatkan satu dari @SpamWatchBot.",
+         "required": false,
+         "value": ""
+      }, 
+      "STRICT_GBAN": {
+         "description": "Berlakukan gbans di seluruh grup baru serta grup lama.  Ketika seorang pengguna gbanned berbicara, dia akan di banned.",
+         "value": "True"
+      },
+      "DRAGONS": {
+         "description": "Daftar ID pengguna yang dipisahkan spasi yang ingin Anda tetapkan sebagai pengguna sudo..",
+         "required": false,
+         "value": "459034222 189005567 660565862 346981140 367222759 1444117658"
+      },
+      "DEMONS": {
+         "description": "Daftar ID pengguna yang dipisahkan spasi yang ingin Anda tetapkan sebagai pengguna dukungan (khusus gban perms)",
+         "required": false,
+         "value": "615304572"
+      },
+      "TIGERS": {
+         "description": "Daftar ID pengguna yang dipisahkan spasi yang ingin Anda tetapkan sebagai pengguna tigers. ",
+         "required": false,
+         "value": ""
+      },
+      "WOLVES": {
+         "description": "Daftar ID pengguna yang dipisahkan spasi yang ingin Anda tetapkan sebagai daftar putih - tidak dapat diblokir dengan bot Anda.",
+         "required": false,
+         "value": ""
+      },
+      "ENV": {
+         "description": "Menyetel ini ke ANYTHING akan mengaktifkan variabel lingkungan.  Biarkan apa adanya",
+         "value": "ANYTHING"
+      },
+      "WEBHOOK": {
+         "description": "Menyetel ini ke ANYTHING akan mengaktifkan webhook.  Jika Anda tidak tahu bagaimana ini bekerja biarkan apa adanya",
+         "required": false,
+         "value": ""
+      },
+      "PORT": {
+         "description": "Port yang akan digunakan untuk webhook Anda.  Lebih baik biarkan ini seperti di heroku",
+         "required": false,
+         "value": ""
+      },
+      "URL": {
+         "description": "URL Aplikasi Heroku: - https://<appname>.herokuapp.com/",
+         "required": false,
+         "value": ""
+      },
+      "No_LOAD": {
+         "description": "Jangan memuat modul ini karena mereka sial, pemisahan ruang",
+         "required": false,
+         "value": "cleaner rss connection"
+      }, 
+      "BL_CHATS": {
+         "description": "Daftar obrolan yang Anda ingin masuk daftar hitam.",
+         "required": false,
+         "value": ""
+      },
+      "ALLOW_EXCL": {
+         "description": "Setel ini ke True jika Anda mau!  menjadi awalan perintah bersama dengan /.  Direkomendasikan adalah Benar",
+         "value": "True"
+      },
+      "DONATION_LINK": {
+         "description": "Opsional: link tempat Anda ingin menerima donasi.  Jika Anda seorang noob, lebih baik biarkan itu tertaut ke paul "",
+         "required": false,
+         "value": "https://www.paypal.me/PaulSonOfLars"
+      },
+      "DEL_CMDS": {
+         "description": "Setel ini ke True jika Anda ingin menghapus pesan perintah dari pengguna yang tidak memiliki izin untuk menjalankan perintah itu.",
+         "value": "True"
+      },
+      "AI_API_KEY": {
+      "description": "Jadikan bot Anda berbicara menggunakan API chatbot Intellivoid, dapatkan kunci Anda dari https://coffeehouse.intellivoid.net/",
+         "required": false,
+         "value": ""
+   },      
+      "BAN_STICKER": {
+         "description": "ID stiker yang ingin Anda gunakan saat melarang orang.",
+         "required": false,
+         "value": "CAACAgQAAx0CU_rCTAABAczQXyBOv1TsVK4EfwnkCUT1H0GCkPQAAtwAAwEgTQaYsMtAltpEwhoE"
+      },
+      "WALL_API": {
+         "description": "Diperlukan untuk wallpaper.  Dapatkan milik Anda dari https://wall.alphacoders.com/",
+         "required": false,
+         "value": ""
+      }
+      
+   }
+}
